@@ -65,6 +65,12 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image:
+      radial-gradient(ellipse 600px 600px at 10% 10%, hsl(24 95% 53% / 0.06), transparent),
+      radial-gradient(ellipse 500px 500px at 90% 20%, hsl(160 85% 45% / 0.05), transparent),
+      radial-gradient(ellipse 700px 400px at 50% 50%, hsl(24 95% 53% / 0.03), transparent),
+      radial-gradient(ellipse 500px 500px at 80% 80%, hsl(160 85% 45% / 0.04), transparent),
+      radial-gradient(ellipse 400px 400px at 20% 70%, hsl(24 95% 53% / 0.04), transparent);
   }
 
   html {
