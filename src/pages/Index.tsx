@@ -28,27 +28,29 @@ const Index = () => {
           <div className="glow-dot bottom-1/4 right-1/4 w-60 h-60 bg-electric/5 blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
         </div>
 
-        <div className="container mx-auto text-center relative z-10">
+        <div className="container mx-auto relative z-10 grid md:grid-cols-2 gap-12 items-center">
+          {/* Left — Text content */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="text-left"
           >
-            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-gradient-mixed mb-6">
+            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-gradient-mixed mb-6">
               12 Kool
             </h1>
-            <p className="font-display text-xl md:text-2xl font-medium text-foreground/90 max-w-3xl mx-auto mb-4">
+            <p className="font-display text-xl md:text-2xl font-medium text-foreground/90 max-w-xl mb-4">
               La restauration rapide, fraîche et de confiance — en caravane mobile.
             </p>
-            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-6">
+            <p className="text-muted-foreground text-base md:text-lg max-w-lg mb-6">
               Un food truck digital : précommande en ligne, géolocalisation en temps réel, et score de confiance vérifié.
             </p>
 
-            <div className="mb-10 space-y-3">
+            <div className="mb-8 space-y-3">
               <p className="text-sm text-electric font-display font-semibold tracking-widest uppercase">
                 Filière : Développement Digital Full Stack
               </p>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-2">
                 {["Abdel Monim Mazgoura", "Ilyas Wakrim", "Jad Ghallali", "Ibrahim Challal", "Zakaria Belcadi"].map((name) => (
                   <span key={name} className="text-xs font-medium text-muted-foreground bg-secondary/60 border border-border px-3 py-1.5 rounded-full">
                     {name}
@@ -64,6 +66,21 @@ const Index = () => {
               Découvrir le projet
               <ArrowDown size={20} />
             </a>
+          </motion.div>
+
+          {/* Right — Logo placeholder */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex items-center justify-center"
+          >
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl border-2 border-dashed border-border bg-card/50 flex flex-col items-center justify-center gap-4 glow-box hover:border-primary/40 transition-colors">
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-electric/20 flex items-center justify-center">
+                <span className="font-display text-3xl font-bold text-gradient-mixed">12K</span>
+              </div>
+              <p className="text-muted-foreground text-sm font-medium">Logo à ajouter</p>
+            </div>
           </motion.div>
         </div>
       </section>
