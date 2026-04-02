@@ -32,9 +32,22 @@ const Index = () => {
             <p className="font-display text-xl md:text-2xl font-medium text-foreground/90 max-w-3xl mx-auto mb-4">
               La restauration rapide, fraîche et de confiance — en caravane mobile.
             </p>
-            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10">
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8">
               Des repas de qualité, préparés à la commande, géolocalisés près de vous.
             </p>
+
+            <div className="mb-10 space-y-3">
+              <p className="text-sm text-electric font-display font-semibold tracking-widest uppercase">
+                Filière : Développement Digital Full Stack
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                {["Abdel Monim Mazgoura", "Ilyas Wakrim", "Jad Ghallali", "Ibrahim Challal", "Zakaria Belcadi"].map((name) => (
+                  <span key={name} className="text-xs font-medium text-muted-foreground bg-secondary/60 border border-border px-3 py-1.5 rounded-full">
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
             <a
               href="#probleme"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-display font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-all text-lg glow-box-intense hover:shadow-[0_0_80px_hsl(24_95%_53%/0.35)]"
