@@ -166,10 +166,10 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl relative z-10">
           <SectionTitle title="Viabilité Financière" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            <StatCard icon="💰" label="Investissement initial" value="190–203K DH" delay={0} glowColor="primary" />
-            <StatCard icon="📈" label="CA mensuel estimé" value="~36 400 DH" delay={0.1} glowColor="electric" />
-            <StatCard icon="📊" label="Bénéfice mensuel" value="10–12K DH" delay={0.2} glowColor="primary" />
-            <StatCard icon="⏱️" label="Retour sur invest." value="18–24 mois" delay={0.3} glowColor="electric" />
+            <StatCard icon={<Wallet className="text-primary" size={28} />} label="Investissement initial" value="190–203K DH" delay={0} glowColor="primary" />
+            <StatCard icon={<TrendingUp className="text-electric" size={28} />} label="CA mensuel estimé" value="~36 400 DH" delay={0.1} glowColor="electric" />
+            <StatCard icon={<BarChart3 className="text-primary" size={28} />} label="Bénéfice mensuel" value="10–12K DH" delay={0.2} glowColor="primary" />
+            <StatCard icon={<Clock className="text-electric" size={28} />} label="Retour sur invest." value="18–24 mois" delay={0.3} glowColor="electric" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
